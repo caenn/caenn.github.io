@@ -1,0 +1,73 @@
+* stack
+** x
+   - [ ] remove uneeded options in css (there's like a looooooot)
+   - [ ] highlight on mouseover
+   - [ ] highlight mouseover navbar
+** z
+   - [X] how do blogs display their stuff
+     - you can just show the blogs in sequence
+     - tiles seems the most reasonable balance in terms of being able to choose what you want to read
+       - could do some netflix style shit in the displaying of the tiles (thats veeery intersting)
+     - a little description below the title might be intersting
+     - only images do provide some sense of mystique
+     - colorscheme?
+     - just text can work too, probably less well on mobile
+   - [X] finish migration script
+   - [X] read about flexbox
+
+
+
+* TODO 
+** design
+- [X] move txts closer to the middle
+- [X] text format blog
+- [X] iamge format blog
+- [X] About
+- [X] decide upon ordering scheme for navigation imgs
+  - [X] research some blog display examples
+- [X] padding to margin
+- [ ] embeded TODOs 
+- [X] learn how to flexbox 
+- [ ] maybe use unreal type of display with some little text intro below the title https://www.unrealengine.com/en-US/video-tutorials
+- [ ] remove uneeded options in css (there's like a looooooot)
+  
+** system
+- [X] figure out how to: blog format -> html
+- [X] how are the pages going to be served (github pages)
+- [ ] getting domain name from github student program thing
+- [ ] fix links references /dasd/ -> ./dadd/index.html for final version
+  
+* backendd sketch
+** DONE content -> html page 
+  - content format -> html-content
+  - html-content ->(insert) html-blog-post-boilerplate
+** DONE generate display files
+  - for e in content folder
+      grab title and image from the file header
+      write it as display item format:
+        div img white box title /div
+** DONE generate display page
+  - for e in display folder
+      insert into blog-home display boilerplate
+** DONE how is this deployed in a new server(after stuff on top is dealt with)
+   clone git repo
+   - can host the html pages on github 4 free
+   - this static directory is updated by script that does that based on content (on another repo)
+** DONE Finish static page builder script
+   - (html/css)
+   - copy blog-home to index blog/index
+   - copy html-content contents to blog/
+   - copy about to about/index
+** TODO if I were to serve this myself, what would the process be?
+* Landing page = blog 
+** blog 1b
+*** blog-pages  1a
+**** navbar
+**** body
+     title
+     img
+     text-body
+** stuff 1b
+*** stuff-pages 1a
+** about
+
