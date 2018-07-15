@@ -1,0 +1,66 @@
+#navBar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 80;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    position: fixed;
+
+    /* background-color: white; */
+    background-color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid #d6d6d6;
+
+
+	  display: grid;
+	  grid-template-columns: 1fr [start] repeat(3, 2.83in)  [end] 1fr;
+}
+
+
+#navBar * {
+    grid-column: 3 / 4;
+}
+
+@media (max-width: 8.5in) {
+	  #navBar { grid-template-columns: 1fr [start] repeat(3, 30%) [end]  1fr; }
+}
+
+
+.navTitle {
+    font-size: 24px;
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    cursor: default;
+
+    display: block;
+    padding: 0;
+    margin: 15px 0 -15px;
+    height: 52px;
+
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+
+#navTitleBlog {
+    justify-self: start;
+    grid-column: 2/3;
+}
+
+#navTitleStuff {
+    justify-self: center;
+    grid-column: 3/4;
+}
+
+#navTitleAbout {
+    justify-self: end;
+    grid-column: 4/5;
+}
+
+.navTitle a{
+    text-decoration: none;
+    color: #333;
+}
+

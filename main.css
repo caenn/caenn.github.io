@@ -1,0 +1,146 @@
+
+body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "Roboto", sans-serif;
+    /* background-color: #fff; */
+    background-color: #fafafa;
+    /* background-color: #ffffff; */
+    color: #333;
+    font-style: normal;
+}
+
+.display-div1 {
+    text-align: center;
+
+
+    display: grid;
+    grid-template-columns: 1fr [start] repeat(3, 2.9in) [end] 1fr;
+}
+
+.display-div2 {
+    padding: 70px 0px 0px 0px;
+
+    /* Limiting amount of boxes is wide monitors
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+   */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-center: center;
+
+
+
+}
+
+@media (max-width: 8.5in) {
+    .display-div1 {
+        grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;
+    }
+}
+
+.display-div1 * {
+    grid-column: 2 / 5;
+}
+
+
+
+
+/* TODO: decide upon gradient or little px borde
+         Probably no border with different color for bg
+         Or veeeeery faint shadow
+*/
+
+.display-tile {
+
+    margin: 10px 5px 10px 5px;
+    background-color: #fff;
+    flex-basis: auto;
+    border-bottom: 1px solid #d6d6d6;
+
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+
+    /*
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
+
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-direction: column;
+    flex-direction: column;
+   */
+
+    max-width : 100%;
+    max-height : 100%;
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 8.5in) {
+    .display-tile {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+.display-tile::after {
+    content: "";
+    border-radius: 3px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    /* -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+}
+
+.displaydk-tile:hover {
+    /* -webkit-transform: scale(1.25, 1.25); */
+    /* transform: scale(1.25, 1.25); */
+}
+
+.display-tile:hover::after {
+    opacity: 1;
+}
+
+
+
+
+/*TODO: change this name to display-image project wide*/
+
+img {
+    vertical-align: middle;
+
+    max-width : 100%;
+    max-height : 100%;
+    height: auto;
+    width: auto;
+}
+
+.display-text-box {
+    padding: 10px;
+}
+
+.display-text {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,122 @@
+* stack
+** v
+   - [X] fix spacing on various stuff. compare test.html to https://github.com/mxstbr/markdown-test-file/blob/master/TEST.md
+   - [X] fig caption matches img width
+     - [X] gimp apple newsrrom caption size limiting technique
+   - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+** y
+   - [-] blog post
+     - [X] img not centered in slim but non phone layout
+     - [X] spacing between paragraphs
+     - [X] text propierties in general too
+     - [ ] fig caption matches img width
+       - [ ] gimp apple newsrrom caption size limiting technique
+     - [-] markdown things: which to implement?
+       - [X] code
+       - [X] most stuff implemented
+       - [ ] fix spacing on various stuff. compare test.html to https://github.com/mxstbr/markdown-test-file/blob/master/TEST.md
+
+   - [X] about max-width and height make image dissapear
+   - [X] display shrink image to always fit grid boundaries
+   - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+   - [ ] https://developers.google.com/speed/pagespeed/insights/?url=caenn.github.com pagespeed insights
+     - [ ] https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+
+** w
+   - [X] figure out how to make the thing responsive
+   - [-] make them responsive
+     - [ ] blog body
+       - [ ] img not centered in slim but non phone layout
+     - [X] nav bar
+     - [X] display
+     - [ ] about
+       - [ ] max-width and height make image dissapear
+   - [X] do not need padding if using grids?
+   - [X] downscale img size so that it fits with grid
+   - [X] add a maximum width scalling for img
+   - [X] modify max 2/5 grid with for text that it isnt so large in
+   - [ ] spacing between paragraphs
+   - [ ] text propierties in general too
+   - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+
+** x
+   - [X] highlight on mouseover
+   - [X] highlight mouseover navbar
+** z
+   - [X] how do blogs display their stuff
+     - you can just show the blogs in sequence
+     - tiles seems the most reasonable balance in terms of being able to choose what you want to read
+       - could do some netflix style shit in the displaying of the tiles (thats veeery intersting)
+     - a little description below the title might be intersting
+     - only images do provide some sense of mystique
+     - colorscheme?
+     - just text can work too, probably less well on mobile
+   - [X] finish migration script
+   - [X] read about flexbox
+
+     
+
+* TODO 
+** design
+- [X] move txts closer to the middle
+- [X] text format blog
+- [X] iamge format blog
+- [X] About
+- [X] decide upon ordering scheme for navigation imgs
+  - [X] research some blog display examples
+- [X] padding to margin
+- [ ] embeded TODOs 
+- [X] learn how to flexbox 
+- [ ] maybe use unreal type of display with some little text intro below the title https://www.unrealengine.com/en-US/video-tutorials
+- [ ] remove uneeded options in css (there's like a looooooot)
+- [ ] nav bar is ultra tiny in mobile !!! (flexbox it?)
+- [ ] text in blog also doesnt scale in mobile !!!@
+- [ ] nothing scales to mobile pretty much
+- [ ] tiles doesnt go bellow one another
+- [ ] img captions text are tiny 2
+- [ ] load on artile after the other after it has been selected on display?
+- [ ] What is the font size that is adequate for a person reading in the cellphone (30cm~?), tablet?, PC?
+  - [ ] how to get info as to what is being used
+
+** system
+- [X] figure out how to: blog format -> html
+- [X] how are the pages going to be served (github pages)
+- [ ] getting domain name from github student program thing
+- [ ] fix links references /dasd/ -> ./dadd/index.html for final version
+- [ ] Google pagespeed stuff https://developers.google.com/speed/pagespeed/insights/?url=caenn.github.com pagespeed insights
+  - [ ] https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+  
+* backendd sketch
+** DONE content -> html page 
+  - content format -> html-content
+  - html-content ->(insert) html-blog-post-boilerplate
+** DONE generate display files
+  - for e in content folder
+      grab title and image from the file header
+      write it as display item format:
+        div img white box title /div
+** DONE generate display page
+  - for e in display folder
+      insert into blog-home display boilerplate
+** DONE how is this deployed in a new server(after stuff on top is dealt with)
+   clone git repo
+   - can host the html pages on github 4 free
+   - this static directory is updated by script that does that based on content (on another repo)
+** DONE Finish static page builder script
+   - (html/css)
+   - copy blog-home to index blog/index
+   - copy html-content contents to blog/
+   - copy about to about/index
+** TODO if I were to serve this myself, what would the process be?
+* Landing page = blog 
+** blog 1b
+*** blog-pages  1a
+**** navbar
+**** body
+     title
+     img
+     text-body
+** stuff 1b
+*** stuff-pages 1a
+** about
+

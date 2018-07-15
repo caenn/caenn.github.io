@@ -1,0 +1,136 @@
+body {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: "Roboto", sans-serif;
+    /* background-color: #fff; */
+    background-color: white;
+    color: #333;
+    font-style: normal;
+}
+
+.article-div1 {
+
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr [start] repeat(3, 2in) [end] 1fr;
+}
+
+@media (max-width: 8.5in) {
+    .article-div1 {
+        grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;
+    }
+}
+
+.article-div1 * {
+    grid-column: 2 / 5;
+}
+
+
+.article-div2 {
+    padding: 70px 0px 0px 0px;
+    text-align: left;
+}
+
+
+.img-div {
+    text-align: center;
+    margin: 1.5em 0 1.5em 0;
+    /* margin: 25px 0 25px 0; */
+
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+figcaption {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: .036em;
+    font-family: "Roboto", sans-serif;
+    margin: 5px 0px 0px 0px;
+    text-align: left;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-title {
+    font-size: 48px;
+    line-height: 1.04167;
+    font-weight: 500;
+    letter-spacing: .006em;
+    color: #111;
+    font-family: "Roboto", sans-serif;
+}
+
+
+h3 {
+    font-size: 18px;
+    margin: 0px 0 1rem;
+}
+
+
+.separator-div {
+    /* margin: 36px auto 50px; */
+    margin: 2em auto 2.8em;
+}
+
+.separator {
+    border-top: 1px solid #d6d6d6;
+}
+
+blockquote{
+    padding: 0 1rem;
+    color: #6a737d;
+    border-left: 0.25rem solid #dfe2e5;
+}
+
+pre {
+    /* padding: .5rem; */
+    /* line-height: 1.25; */
+    /* overflow-x: scroll; */
+    /* background-color: #d6d6d6; */
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
+}
+
+code {
+    padding: 0.2rem 0.4rem;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 3px;
+}
+
+h2 {
+    padding-bottom: 0.3rem;
+    font-size: 1.5rem;
+    /* border-bottom: 1px solid #eaecef; */
+}
+
+h2, p, ul, hr, ol, blockquote, pre {margin-bottom: 1rem;}
+
+ul, ol {
+    padding-left: 2rem;
+}
+a {
+    color: #0366d6;
+}
+
+/* a { box-shado: inset 0 -0.25em hsl(55, 100%, 75%); } */
+
+/* @media (max-width: 8.5in) { :root { font-size: 18px; } } */
+
+/* @media (max-width: 5.0in) { :root { font-size: 16px; } } */
