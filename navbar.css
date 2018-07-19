@@ -1,5 +1,5 @@
 #navBar {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -7,7 +7,6 @@
     z-index: 80;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
-    position: fixed;
 
     /* background-color: white; */
     background-color: rgba(255,255,255,0.7);
@@ -17,6 +16,12 @@
 	  display: grid;
 	  grid-template-columns: 1fr [start] repeat(3, 2.83in)  [end] 1fr;
 }
+
+/* @media only screen and (max-width: 720px) { */
+/*     header { */
+/*         position: absolute; */
+/*     } */
+/* } */
 
 
 #navBar * {

@@ -1,9 +1,76 @@
 * stack
+** r
+   - [ ] theres a slight letter blurring/relocating on mouseover
+   - [ ] card extends an itsy bit to the left and right of the iamge (fix widhth expa
+ nding tiles and make as small as it can be)
+   - [-] check if font size works on different resos
+     - [X] mobile
+     - [X] 1980
+     - [ ] 2560
+   - [X] adjust measuring unit in @media queries
+   - [X] adjust the actual measiung in @media so that it changes in the exact width+margin for the max text width
+   - [ ] enforce 400x400 img size on article generation
+
+** s
+   - [X] set n display columns depending on screen
+     - [X] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+   - [X] text size for screen (apple newsroom prolly at lea
+st decent)
+   - [X] fix shadowboxes on mouseover
+   - [ ] theres a slight letter blurring/relocating on mouseover
+
+   - [ ] card extends an itsy bit to the left and right of the iamge (fix widhth expa
+ nding tiles and make as small as it can be)
+
+   - [-] check if font size works on different resos
+     - [X] mobile
+     - [X] 1980
+     - [ ] 2560
+
+   - [ ] adjust measuring unit in @media queries
+   - [ ] adjust the actual measiung in @media so that it changes in the exact width+margin for the max text width
+
+    
+   - [ ] enforce 400x400 img size on article generation
+   - [X] fix bar scalin
+     - either disable bar following on mobile or zooming or js stuff
+     - if disable bar, make a button to go up
+     - [X] or do it like apple and ignore the problem
+
+** t
+   - [o] fix so that cards go upwards if there's free size
+     - Doing that seems to be impossible in a way thats not manual or that preserves order with current css
+
+   - [ ] set n display columns depending on screen
+     - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+   - [ ] text size for screen (apple newsroom prolly at lea
+st decent)
+   - [ ] fix shadowboxes on mouseover
+    
+   - [ ] enforce 400x400 img size on article generation
+   - [ ] fix bar scaling
+     - either disable bar following on mobile or zooming or js stuff
+     - if disable bar, make a button to go up
+     - or do it like apple and ignore the problem
+
+** u
+   - [X] max size for imgs so that they tile, when the aspect ratio permits
+   - [X] fix place of boxes so that if one is bigger then they dont go crazy,
+   - [X] make so the cards expand to fit the space allocated by the grid/image
+   - [ ] fix so that cards go upwards if there's free size
+   
+
+   - [ ] fix bar scaling with pinch zoom
+     - either disable bar following on mobile or zooming or js stuff  
+   - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
 ** v
    - [X] fix spacing on various stuff. compare test.html to https://github.com/mxstbr/markdown-test-file/blob/master/TEST.md
    - [X] fig caption matches img width
      - [X] gimp apple newsrrom caption size limiting technique
-   - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+   - [ ] bar scales with pinch zoom
+   - [ ] max size for imgs so that they tile, when the aspect ratio permits
+     - [ ] it would be kinda nice if it displays 2 tiles in browser in phones(though most sites skimp on it(mb for good reason))
+   - [ ] fix place of boxes so that if one is bigger then the other they dont go crazy, scale/flex the card on tiny imgs?
 ** y
    - [-] blog post
      - [X] img not centered in slim but non phone layout
@@ -53,9 +120,6 @@
      - just text can work too, probably less well on mobile
    - [X] finish migration script
    - [X] read about flexbox
-
-     
-
 * TODO 
 ** design
 - [X] move txts closer to the middle
@@ -67,16 +131,17 @@
 - [X] padding to margin
 - [ ] embeded TODOs 
 - [X] learn how to flexbox 
-- [ ] maybe use unreal type of display with some little text intro below the title https://www.unrealengine.com/en-US/video-tutorials
+- [X] maybe use unreal type of display with some little text intro below the title https://www.unrealengine.com/en-US/video-tutorials
 - [ ] remove uneeded options in css (there's like a looooooot)
-- [ ] nav bar is ultra tiny in mobile !!! (flexbox it?)
-- [ ] text in blog also doesnt scale in mobile !!!@
-- [ ] nothing scales to mobile pretty much
-- [ ] tiles doesnt go bellow one another
-- [ ] img captions text are tiny 2
+- [X] nav bar is ultra tiny in mobile !!! (flexbox it?)
+- [X] text in blog also doesnt scale in mobile !!!@
+- [X] nothing scales to mobile pretty much
+- [X] tiles doesnt go bellow one another
+- [X] img captions text are tiny 2
 - [ ] load on artile after the other after it has been selected on display?
-- [ ] What is the font size that is adequate for a person reading in the cellphone (30cm~?), tablet?, PC?
+- [-] What is the font size that is adequate for a person reading in the cellphone (30cm~?), tablet?, PC?
   - [ ] how to get info as to what is being used
+  - [X] current font size is on point on mobile
 
 ** system
 - [X] figure out how to: blog format -> html

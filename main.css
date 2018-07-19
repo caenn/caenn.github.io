@@ -1,4 +1,3 @@
-
 body {
     font-size: 17px;
     line-height: 1.47059;
@@ -15,119 +14,83 @@ body {
 .display-div1 {
     text-align: center;
 
-
     display: grid;
-    grid-template-columns: 1fr [start] repeat(3, 2.9in) [end] 1fr;
+    grid-template-columns: 1fr [start] repeat(3, 278px) [end] 1fr;
 }
+
+.display-div1 * {grid-column: 2 / 5;}
 
 .display-div2 {
     padding: 70px 0px 0px 0px;
 
-    /* Limiting amount of boxes is wide monitors
     margin-left: auto;
     margin-right: auto;
-    width: 980px;
-   */
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-center: center;
-
-
-
+    flex-flow: row wrap;
+    width: 100%;
 }
 
-@media (max-width: 8.5in) {
-    .display-div1 {
-        grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;
-    }
-}
-
-.display-div1 * {
-    grid-column: 2 / 5;
-}
-
-
-
-
-/* TODO: decide upon gradient or little px borde
-         Probably no border with different color for bg
-         Or veeeeery faint shadow
-*/
+@media (max-width: 816px) {.display-div1 {grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;}}
+@media (max-width: 816px) {.display-tile {margin: 10px 0px 10px 0px;}}
+@media (min-width: 2000px) {body {font-size: 24px;}}
 
 .display-tile {
-
     margin: 10px 5px 10px 5px;
     background-color: #fff;
-    flex-basis: auto;
     border-bottom: 1px solid #d6d6d6;
-
-    position: relative;
-    display: inline-block;
-    background-color: #fff;
-    border-radius: 3px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    /* -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
-    /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+    border-radius: 3px;
+ 
 
-    /*
-    border-bottom: 1px solid #d6d6d6;
-    border-top: 1px solid #d6d6d6;
 
-    border-left: 1px solid #ebebeb;
-    border-right: 1px solid #ebebeb;
+    flex: auto;
+    align-items: center;
+    align-content: center;
 
-    display: flex;
-    display: -ms-flexbox;
-    -ms-flex-direction: column;
-    flex-direction: column;
-   */
-
-    max-width : 100%;
-    max-height : 100%;
-    height: auto;
-    width: auto;
 }
 
-@media (max-width: 8.5in) {
-    .display-tile {
-        margin: 10px 0px 10px 0px;
-    }
-}
+/*
+Font Size
+- [ ] mobile = already works
+- [ ] tablet landscape
+- [ ] 1360 desktop
+- [ ] 1980 desktop
+- [ ] 2650 desktop
+*/
+
+/* @media screen and (min-width:768px) {.display-tile {width: 400px;}} */
 
 .display-tile::after {
     content: "";
-    border-radius: 3px;
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+
+    border-radius: 3px;
+    box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
+    border-bottom: 0px solid #d6d6d6;
     opacity: 0;
-    /* -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
-    /* transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); */
+
+
 }
 
-.displaydk-tile:hover {
-    /* -webkit-transform: scale(1.25, 1.25); */
-    /* transform: scale(1.25, 1.25); */
+.display-tile:hover {
+    -webkit-transform: scale(1.0001, 1.0001);
+    transform: scale(1.0001, 1.0001);
 }
 
 .display-tile:hover::after {
     opacity: 1;
 }
 
-
-
-
-/*TODO: change this name to display-image project wide*/
-
 img {
     vertical-align: middle;
 
+    object-fit: cover;
     max-width : 100%;
     max-height : 100%;
     height: auto;
@@ -135,7 +98,7 @@ img {
 }
 
 .display-text-box {
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
 }
 
 .display-text {
