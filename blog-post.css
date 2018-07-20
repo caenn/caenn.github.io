@@ -19,7 +19,7 @@ body {
 @media (max-width: 8.5in) {
     .article-div1 {
         /*TODO: 5% or 3% on mobile; or maybe even less?*/
-        grid-template-columns: 1fr [start] repeat(3, 32%) [end] 1fr;
+        grid-template-columns: 1fr [start] repeat(3, 31%) [end] 1fr;
         /* grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr; */
     }
 }

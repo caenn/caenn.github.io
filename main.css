@@ -13,7 +13,6 @@ body {
 
 .display-div1 {
     text-align: center;
-
     display: grid;
     grid-template-columns: 1fr [start] repeat(3, 278px) [end] 1fr;
 }
@@ -26,14 +25,16 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    display: flex;
+    /* display: flex; *//*makes the divs expand width wise*/
     flex-flow: row wrap;
+    justify-content:center;
     width: 100%;
 }
 
-@media (max-width: 816px) {.display-div1 {grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;}}
-@media (max-width: 816px) {.display-tile {margin: 10px 0px 10px 0px;}}
-@media (min-width: 2000px) {body {font-size: 24px;}}
+@media (max-width: 816px)  {.display-div1 {grid-template-columns: 1fr [start] repeat(3, 31%) [end] 1fr;}}
+/* @media (max-width: 816px)  {.display-div1 {grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;}} */
+@media (max-width: 816px)  {.display-tile {margin: 10px 0px 10px 0px;}}
+@media (min-width: 2000px) {body          {font-size: 24px;}}
 
 .display-tile {
     margin: 10px 5px 10px 5px;
@@ -41,25 +42,15 @@ body {
     border-bottom: 1px solid #d6d6d6;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
- 
+
+    display: inline-block;
+    max-width: 100%;
 
 
     flex: auto;
     align-items: center;
     align-content: center;
-
 }
-
-/*
-Font Size
-- [ ] mobile = already works
-- [ ] tablet landscape
-- [ ] 1360 desktop
-- [ ] 1980 desktop
-- [ ] 2650 desktop
-*/
-
-/* @media screen and (min-width:768px) {.display-tile {width: 400px;}} */
 
 .display-tile::after {
     content: "";
@@ -70,22 +61,25 @@ Font Size
     width: 100%;
     height: 100%;
 
-    border-radius: 3px;
     box-shadow: 0 1px 40px rgba(0, 0, 0, 0.2);
     border-bottom: 0px solid #d6d6d6;
     opacity: 0;
-
-
 }
 
 .display-tile:hover {
+    /*fix for jagged text*/
+    -webkit-transform: perspective(1px) rotate(-10deg);
+    -moz-transform: perspective(1px) rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: perspective(1px) rotate(-10deg)
+    backface-visibility: hidden;
+
     -webkit-transform: scale(1.0001, 1.0001);
     transform: scale(1.0001, 1.0001);
 }
 
-.display-tile:hover::after {
-    opacity: 1;
-}
+.display-tile:hover::after {opacity: 1;}
 
 img {
     vertical-align: middle;
@@ -97,9 +91,7 @@ img {
     width: auto;
 }
 
-.display-text-box {
-    padding: 10px 0px 10px 0px;
-}
+.display-text-box {padding: 10px 0px 10px 0px;}
 
 .display-text {
     font-size: 18px;
