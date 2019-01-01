@@ -34,7 +34,6 @@ body {
 @media (max-width: 816px)  {.display-div1 {grid-template-columns: 1fr [start] repeat(3, 31%) [end] 1fr;}}
 /* @media (max-width: 816px)  {.display-div1 {grid-template-columns: 1fr [start] repeat(3, 30%) [end] 1fr;}} */
 @media (max-width: 816px)  {.display-tile {margin: 10px 0px 10px 0px;}}
-@media (min-width: 2000px) {body          {font-size: 24px;}}
 
 .display-tile {
     margin: 10px 5px 10px 5px;

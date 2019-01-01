@@ -24,11 +24,6 @@ body {
     }
 }
 
-@media (min-width: 2000px) {
-    body {font-size: 24px;}
-    .article-div1 {grid-template-columns: 1fr [start] repeat(3, 271px) [end] 1fr;}
-}
-
 .article-div1 * {grid-column: 2 / 5;}
 
 
