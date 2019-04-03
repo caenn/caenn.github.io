@@ -1,4 +1,6 @@
 * stack
+** legibility check up on different devices
+*** seems like font should be a little bigger across the board
 ** r
    - [ ] theres a slight letter blurring/relocating on mouseover
    - [ ] card extends an itsy bit to the left and right of the iamge (fix widhth expa
@@ -10,6 +12,7 @@
    - [X] adjust measuring unit in @media queries
    - [X] adjust the actual measiung in @media so that it changes in the exact width+margin for the max text width
    - [ ] enforce 400x400 img size on article generation
+
 
 ** s
    - [X] set n display columns depending on screen
@@ -172,16 +175,16 @@ st decent)
    - copy blog-home to index blog/index
    - copy html-content contents to blog/
    - copy about to about/index
-** TODO if I were to serve this myself, what would the process be?
-* Landing page = blog 
-** blog 1b
-*** blog-pages  1a
-**** navbar
-**** body
-     title
-     img
-     text-body
-** stuff 1b
-*** stuff-pages 1a
-** about
+** DONE if I were to serve this myself, what would the process be?
+   CLOSED: [2019-04-03 Wed 01:20]
+* author box html
+            <div class="author-box">
+                <div class="author-desc">
+                    <h2>Richard Philips Feynman</h2>
+                    <p>Date the article was written</p>
+                </div>
+                <div class="author-img">
+                    <img src=imgs/feynman.jpg>
+                </div>
+            </div>
 

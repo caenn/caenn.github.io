@@ -11,7 +11,7 @@ body {
 }
 
 .article-div1 {
-    text-align: center;
+    /* text-align: center; */
     display: grid;
     grid-template-columns: 1fr [start] repeat(3, 192px) [end] 1fr;
 }
@@ -30,6 +30,29 @@ body {
 .article-div2 {
     padding: 70px 0px 0px 0px;
     text-align: left;
+}
+
+.author-box {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    flex:1;
+    display: flex;
+    align-content: stretch;
+}
+
+.author-desc {
+    float: right;
+    width: 50%;
+    flex: 1 0 auto;
+}
+.author-img {
+    float: left;
+    width: 50%;
+    flex: 1 0 auto;
+    background-image: ./imgs/feynman.jpg;
+    background-position: 46% 32%;
+
 }
 
 .img-div {
@@ -51,7 +74,7 @@ figcaption {
     line-height: 1.5;
     font-weight: 400;
     letter-spacing: .036em;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     margin: 5px 0px 0px 0px;
     text-align: left;
 
@@ -65,7 +88,7 @@ figcaption {
     font-weight: 500;
     letter-spacing: .006em;
     color: #111;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
 }
 
 
